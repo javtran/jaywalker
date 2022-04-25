@@ -1,6 +1,6 @@
 from .SpeedModel import SpeedModel
 
-class DangerousSpeedModel(SpeedModel):
+class SuicideSpeedModel(SpeedModel):
     
     def initialize(self):
         self._desiredSpeed = self.internalFactors["desired_speed"] * 1
