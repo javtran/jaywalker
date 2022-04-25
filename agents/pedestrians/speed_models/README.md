@@ -58,7 +58,7 @@ This speed model is experimental with 4 data parameters: relaxation time, desire
 
 ### Gif Demonstration
 
-<img src='https://submissions.us-east-1.linodeobjects.com/ios_university/rRxSl_pW.gif'>
+<img src='https://media1.giphy.com/media/40y86FAC82Wp1aAxMF/giphy.gif?cid=790b7611a8517a2e0c175525b627e9e832623799980152d1&rid=giphy.gif&ct=g'>
 
 
 ## Question Reflection
