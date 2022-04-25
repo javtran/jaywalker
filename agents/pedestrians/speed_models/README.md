@@ -23,3 +23,4 @@ This speed model bases off on 3 data parameter given by the paper ["Application 
 ### Gif Demonstration
 
 <img src='https://media0.giphy.com/media/o72DTR8PcIakypBqPP/giphy.gif?cid=790b7611d304d5011cccc4c3392f857eed6fea731d3c7254&rid=giphy.gif&ct=g' title ='' alt=''/>
+<img src='https://media2.giphy.com/media/ZUfOqlyajAh9FZVRaG/giphy.gif?cid=790b761171b7626ab052ce3f0a5411ef4fd9918b433f582e&rid=giphy.gif&ct=g' title ='' alt=''/>
