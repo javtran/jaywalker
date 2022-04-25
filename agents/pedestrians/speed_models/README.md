@@ -19,3 +19,7 @@ This speed model bases off on 3 data parameter given by the paper ["Application 
 | max speed       | 1.8 m/s |
 | desired speed   | 1.6 m/s |
 | relaxation time | 2 s     |
+
+### Gif Demonstration
+
+<img src='' title ='' alt=''/>
