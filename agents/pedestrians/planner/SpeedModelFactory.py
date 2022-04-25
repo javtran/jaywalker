@@ -7,7 +7,8 @@ class SpeedModelFactory:
     modelNameMap = {
         "static": StaticSpeedModel,
         "paper": PaperSpeedModel,
-        "suicide": SuicideSpeedModel
+        "suicide": SuicideSpeedModel,
+        "dangerous": DangerousSpeedModel
     }
 
     @staticmethod

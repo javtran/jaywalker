@@ -1,3 +1,4 @@
 from .StaticSpeedModel import StaticSpeedModel
 from .PaperSpeedModel import PaperSpeedModel
 from .SuicideSpeedModel import SuicideSpeedModel
+from .DangerousSpeedModel import DangerousSpeedModel
