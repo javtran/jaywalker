@@ -23,7 +23,7 @@ This speed model bases off on 3 data parameter given by the paper ["Application 
 
 ### Gif Demonstration
 
-<img src='https://media1.giphy.com/media/40y86FAC82Wp1aAxMF/giphy.gif?cid=790b7611a8517a2e0c175525b627e9e832623799980152d1&rid=giphy.gif&ct=g' title ='' alt=''/>
+<img src='https://media4.giphy.com/media/naMqau6aXClhZ3wnuI/giphy.gif' title ='' alt=''/>
 
 <img src='https://media2.giphy.com/media/ZUfOqlyajAh9FZVRaG/giphy.gif?cid=790b761171b7626ab052ce3f0a5411ef4fd9918b433f582e&rid=giphy.gif&ct=g' title ='' alt=''/>
 
@@ -59,7 +59,7 @@ This speed model is experimental with 4 data parameters: relaxation time, desire
 
 ### Gif Demonstration
 
-<img src='https://media1.giphy.com/media/40y86FAC82Wp1aAxMF/giphy.gif?cid=790b7611a8517a2e0c175525b627e9e832623799980152d1&rid=giphy.gif&ct=g' />
+<img src='https://media0.giphy.com/media/40y86FAC82Wp1aAxMF/giphy.gif?cid=790b761184244985e8c4f2ed747c15e13ae232ca7a899344&rid=giphy.gif&ct=g' />
 
 
 ## Question Reflection
