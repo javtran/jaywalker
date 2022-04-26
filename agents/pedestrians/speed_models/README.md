@@ -23,11 +23,12 @@ This speed model bases off on 3 data parameter given by the paper ["Application 
 
 ### Gif Demonstration
 
-<img src='https://media0.giphy.com/media/o72DTR8PcIakypBqPP/giphy.gif?cid=790b7611d304d5011cccc4c3392f857eed6fea731d3c7254&rid=giphy.gif&ct=g' title ='' alt=''/>
+<img src='https://media1.giphy.com/media/40y86FAC82Wp1aAxMF/giphy.gif?cid=790b7611a8517a2e0c175525b627e9e832623799980152d1&rid=giphy.gif&ct=g' title ='' alt=''/>
 
 <img src='https://media2.giphy.com/media/ZUfOqlyajAh9FZVRaG/giphy.gif?cid=790b761171b7626ab052ce3f0a5411ef4fd9918b433f582e&rid=giphy.gif&ct=g' title ='' alt=''/>
 
-<img src='https://media2.giphy.com/media/8nZNHTLgo7Qahg4LXl/giphy.gif?cid=790b7611f35ddf221d12c1ad2984fe58f0498f8424afbb3e&rid=giphy.gif&ct=g'/>
+<img src='https://media2.giphy.com/media/8nZNHTLgo7Qahg4LXl/giphy.gif?cid=790b7611f35ddf221d12c1ad2984fe58f0498f8424afbb3e&rid=giphy.gif&ct=g' title =''
+alt=''/>
 
 ## Dangerous Speed Model
 
@@ -58,7 +59,7 @@ This speed model is experimental with 4 data parameters: relaxation time, desire
 
 ### Gif Demonstration
 
-![](https://media1.giphy.com/media/40y86FAC82Wp1aAxMF/giphy.gif?cid=790b7611a8517a2e0c175525b627e9e832623799980152d1&rid=giphy.gif&ct=g)
+<img src='https://media1.giphy.com/media/40y86FAC82Wp1aAxMF/giphy.gif?cid=790b7611a8517a2e0c175525b627e9e832623799980152d1&rid=giphy.gif&ct=g' />
 
 
 ## Question Reflection
