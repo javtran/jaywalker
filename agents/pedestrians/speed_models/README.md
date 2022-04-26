@@ -27,7 +27,7 @@ This speed model bases off on 3 data parameter given by the paper ["Application 
 
 <img src='https://media2.giphy.com/media/ZUfOqlyajAh9FZVRaG/giphy.gif?cid=790b761171b7626ab052ce3f0a5411ef4fd9918b433f582e&rid=giphy.gif&ct=g' title ='' alt=''/>
 
-<img src='https://media2.giphy.com/media/8nZNHTLgo7Qahg4LXl/giphy.gif?cid=790b7611f35ddf221d12c1ad2984fe58f0498f8424afbb3e&rid=giphy.gif&ct=g'>
+<img src='https://media2.giphy.com/media/8nZNHTLgo7Qahg4LXl/giphy.gif?cid=790b7611f35ddf221d12c1ad2984fe58f0498f8424afbb3e&rid=giphy.gif&ct=g'/>
 
 ## Dangerous Speed Model
 
