@@ -71,3 +71,19 @@ Relaxation determines the acceleration or deceleration from current speed to des
 
 The speed model that models after the reading is definitely slower to mimic realistic pedestrian speed.There is definitely a faster reaction time in static speed model than in the Paper Speed Model, but that's because the paper speed model has a longer relaxation time. For the other two models that we created, the obvious difference is in speed. Since the relaxation time is set to 1, the changes could be detected in the simulation. But these two models definitely acted more dangerously.
 
+## Paper Review 2 Question (Jackson Tran)
+1. Why speed model is needed?
+
+In order to produce a more realistic vehicle-pedestrian jaywalking situations, we need to create speed models that best capture human walking behaviors. Our technology is not advanced enough to copy 100% of human behaviors and so we create many speed models to mimic such behaviors.
+
+2. How does the papers capture speed variation while a pedestrian is crossing?
+
+The paper uses different variables/parameters to capture any effects they have on speed and also to see correlations within the variables. Examples of such variables/parameters are group-crossing, age groups, gender, technological distraction, and carrying items.
+
+3. Make a list of factors that determines the speed of a pedestrian.
+
+Group-crossing, alone-crossing, age groups, gender, technological distraction, situational awareness models(looking left-right/right-left/front/ground), conflict models(conflict experience/collision avoidance)
+
+4. When amy a drastic change in speed take place?
+
+Evasive behavior causes drastic change in pedestrian speed. As they avoid conflict and collision, they make actions such as accelarating at an angle or  deccelerating (which can also mean deccelerating to stop).
