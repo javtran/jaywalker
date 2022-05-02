@@ -4,15 +4,15 @@ Speed Model Making
 # Speed Models
 
 ## Table of Contents
-1. [Paper Speed Model](Paper-Speed-Model)
-2. [Dangerous Speed Model](Dangerous-Speed-Model)
-3. [Suicides Speed Model](Suicide-Speed-Model)
-4. [Question Reflection](Question-Reflection)
+1. [Paper Speed Model](#Paper-Speed-Model)
+2. [Dangerous Speed Model](#Dangerous-Speed-Model)
+3. [Suicides Speed Model](#Suicide-Speed-Model)
+4. [Question Reflection](#Question-Reflection)
 
 ## Paper Speed Model
 
 ### Description
-This speed model bases off on 3 data parameter given by the paper ["Application of social force model to pedestrian behavior analysis at signalized crosswalk"](). The 3 parameters we changed were relaxation time, desired speed, and maximum crossing speed. We set a minimum speed to set bounds of the range of speed.
+This speed model bases off on 3 data parameter given by the paper ["Application of social force model to pedestrian behavior analysis at signalized crosswalk"](https://www.sciencedirect.com/science/article/pii/S0968090X14000114). The 3 parameters we changed were relaxation time, desired speed, and maximum crossing speed. We set a minimum speed to set bounds of the range of speed.
 
 | Parameters      | unit    |
 | --------------- | ------- |
@@ -27,8 +27,7 @@ This speed model bases off on 3 data parameter given by the paper ["Application 
 
 <img src='https://media2.giphy.com/media/ZUfOqlyajAh9FZVRaG/giphy.gif?cid=790b761171b7626ab052ce3f0a5411ef4fd9918b433f582e&rid=giphy.gif&ct=g' title ='' alt=''/>
 
-<img src='https://media2.giphy.com/media/8nZNHTLgo7Qahg4LXl/giphy.gif?cid=790b7611f35ddf221d12c1ad2984fe58f0498f8424afbb3e&rid=giphy.gif&ct=g' title =''
-alt=''/>
+<img src='https://media2.giphy.com/media/8nZNHTLgo7Qahg4LXl/giphy.gif?cid=790b7611f35ddf221d12c1ad2984fe58f0498f8424afbb3e&rid=giphy.gif&ct=g' title ='' alt=''/>
 
 ## Dangerous Speed Model
 
@@ -45,6 +44,9 @@ This speed model is experimental with 4 data parameters: relaxation time, desire
 
 ### Gif Demonstration
 
+<img src='https://media3.giphy.com/media/eo87KS4JCH75LpUKpG/giphy.gif?cid=790b76113923126c642b8b8962b449d82b8e83168f39a620&rid=giphy.gif&ct=g' />
+<p><a href="https://giphy.com/gifs/eo87KS4JCH75LpUKpG">via GIPHY</a></p>
+
 ## Suicide Speed Model
 
 ### Description
@@ -59,8 +61,9 @@ This speed model is experimental with 4 data parameters: relaxation time, desire
 
 ### Gif Demonstration
 
-<img src='https://media0.giphy.com/media/40y86FAC82Wp1aAxMF/giphy.gif?cid=790b761184244985e8c4f2ed747c15e13ae232ca7a899344&rid=giphy.gif&ct=g' />
+<img src='https://media0.giphy.com/media/40y86FAC82Wp1aAxMF/giphy.gif?cid=790b761184244985e8c4f2ed747c15e13ae232ca7a899344&rid=giphy.gif&ct=g' title ='' alt=''/>
 
+<p><a href="https://giphy.com/gifs/40y86FAC82Wp1aAxMF">via GIPHY</a></p>
 
 ## Question Reflection
 1. What changes can you observe in the simulation if the relaxation time is changed? Describe the effects of having a long relaxation time which are not easily observable.
