@@ -60,7 +60,7 @@ This speed model is experimental with 4 data parameters: relaxation time, desire
 
 <img src='https://media0.giphy.com/media/40y86FAC82Wp1aAxMF/giphy.gif?cid=790b761184244985e8c4f2ed747c15e13ae232ca7a899344&rid=giphy.gif&ct=g' title ='' alt=''/>
 
-<div style="width:100%;height:0;padding-bottom:178%;position:relative;"><iframe src="https://giphy.com/embed/40y86FAC82Wp1aAxMF" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/40y86FAC82Wp1aAxMF">via GIPHY</a></p>
+<p><a href="https://giphy.com/gifs/40y86FAC82Wp1aAxMF">via GIPHY</a></p>
 
 ## Question Reflection
 1. What changes can you observe in the simulation if the relaxation time is changed? Describe the effects of having a long relaxation time which are not easily observable.
