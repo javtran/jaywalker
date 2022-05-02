@@ -4,10 +4,10 @@ Speed Model Making
 # Speed Models
 
 ## Table of Contents
-1. [Paper Speed Model](Paper-Speed-Model)
-2. [Dangerous Speed Model](Dangerous-Speed-Model)
-3. [Suicides Speed Model](Suicide-Speed-Model)
-4. [Question Reflection](Question-Reflection)
+1. [Paper Speed Model](#Paper-Speed-Model)
+2. [Dangerous Speed Model](#Dangerous-Speed-Model)
+3. [Suicides Speed Model](#Suicide-Speed-Model)
+4. [Question Reflection](#Question-Reflection)
 
 ## Paper Speed Model
 
