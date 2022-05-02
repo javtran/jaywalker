@@ -1,9 +1,15 @@
 import carla
 import random
+import time
+import math
 
 from lib import SimulationVisualization, MapNames, MapManager, Simulator
 
 SpawnActor = carla.command.SpawnActor
+def get_transform(vehicle_location, angle, d=6.4):
+    a = math.radians(angle)
+    location = carla.Location(d * math.cos(a), d * math.sin(a), 2.0) + vehicle_location
+    return carla.Transform(location, carla.Rotation(yaw=180 + angle, pitch=-15))
 
 def main():
     
@@ -15,7 +21,8 @@ def main():
 
     # GETTING THE MAPMANAGER AND LOADING MAP
     mapManager = MapManager(client)
-    mapManager.load(MapNames.circle_t_junctions)
+    #mapManager.load(MapNames.Town02_Opt)
+    client.load_world('Town02_Opt', carla.MapLayer.NONE)
 
     world = client.get_world()
     visualizer = SimulationVisualization(client, mapManager)
@@ -27,7 +34,7 @@ def main():
 
     # CREATING OUR SPAWN POINTS FOR PEDESTRIANS
     ped_spawn_points = list()
-    for i in range(3):
+    for i in range(1):
         spawn_point = carla.Transform()
         random_map_loc = world.get_random_location_from_navigation() # gets a valid random location on the map (not on the streets)
         if (random_map_loc != None):
@@ -56,7 +63,7 @@ def main():
     traffic_manager.set_global_distance_to_leading_vehicle(2.5)
     SetAutopilot = carla.command.SetAutopilot
     FutureActor = carla.command.FutureActor
-    for i in range(5):
+    for i in range(3):
         car_bp = random.choice(vehicles)
         if car_bp.has_attribute('driver_id'):
             driver_id = random.choice(car_bp.get_attribute('driver_id').recommended_values)
@@ -64,28 +71,38 @@ def main():
         else:
             car_bp.set_attribute('role_name', 'autopilot')
         batch_car.append(SpawnActor(car_bp, car_spawn_points[i]).then(SetAutopilot(FutureActor, True, traffic_manager.get_port())))
-
     vehicles_list = []
     for i in client.apply_batch_sync(batch_car, True):
         if not i.error:
-            vehicles_list.aapend(i.actor_id)
+            print("SPAWNED A CAR")
+            vehicles_list.append(i.actor_id)
 
     # CAMERA
-    camera_bp = world.get_blueprint_library().find('sensor.camera.rgb')
-    camera_bp.set_attribute('image_size_x', str(1000))
-    camera_bp.set_attribute('image_size_y', str(562))
-    camera = world.spawn_actor(camera_bp, spectator.get_transform(), attach_to = vehicles_list[0])
+    #camera_bp = world.get_blueprint_library().find('sensor.camera.rgb')
+    # camera_bp.set_attribute('image_size_x', str(1000))
+    # camera_bp.set_attribute('image_size_y', str(562))
+    # camera = world.spawn_actor(camera_bp, spectator.get_transform(), attach_to = vehicles_list[0])
     
 
 
-    onTickers = [visualizer.onTick]
-    onEnders = []
-    simulator = Simulator(client, onTickers=onTickers, onEnders=onEnders)
-    simulator.run(1000)
+    # onTickers = [visualizer.onTick]
+    # onEnders = []
+    # simulator = Simulator(client, onTickers=onTickers, onEnders=onEnders)
+    # simulator.run(1000)
 
-
-    spectator = world.get_actors()
+    spectator = world.get_spectator()
+    vehicle = world.get_actor(vehicles_list[0])
     print(spectator)
+    print(vehicle)
+    for i in range(1000):
+        world.tick()
+        spectator.set_transform(get_transform(vehicle.get_location(), 90))
+        time.sleep(0.05)
+    
+
+
+    # spectator = world.get_actors()
+    # print(spectator)
 
 
 
