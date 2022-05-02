@@ -44,6 +44,8 @@ This speed model is experimental with 4 data parameters: relaxation time, desire
 
 ### Gif Demonstration
 
+<img src='https://media3.giphy.com/media/eo87KS4JCH75LpUKpG/giphy.gif?cid=790b76113923126c642b8b8962b449d82b8e83168f39a620&rid=giphy.gif&ct=g' />
+
 ## Suicide Speed Model
 
 ### Description
