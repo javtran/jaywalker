@@ -72,7 +72,7 @@ Relaxation determines the acceleration or deceleration from current speed to des
 
 2. How is your speed model different from the StaticSpeedModel? Could you detect any chagnes visually? If not, why?
 
-The speed model that models after the reading is definitely slower to mimic realistic pedestrian speed.There is definitely a faster reaction time in static speed model than in the Paper Speed Model, but that's because the paper speed model has a longer relaxation time. For the other two models that we created, the obvious difference is in speed. Since the relaxation time is set to 1, the changes could be detected in the simulation. But these two models definitely acted more dangerously.
+The speed model that models after the reading is definitely slower to mimic realistic pedestrian speed.There is definitely a faster reaction time in static speed model than in the Paper Speed Model, but that's because the paper speed model has a longer relaxation time. For the other two models that we created, the obvious difference is in speed. Since the relaxation time is set to 1, the changes could be detected in the simulation. But these two models definitely acted more dangerously. WIth faster speed, the pedestrians tend to go over their desired location because of the remaining travelling while decelerating, which then causes them to need to go back the opposite way.
 
 ## Paper Review 2 Question (Jackson Tran)
 1. Why speed model is needed?
