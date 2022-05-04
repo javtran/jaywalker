@@ -34,7 +34,7 @@ def main():
 
     # CREATING OUR SPAWN POINTS FOR PEDESTRIANS
     ped_spawn_points = list()
-    for i in range(1):
+    for i in range(3):
         spawn_point = carla.Transform()
         random_map_loc = world.get_random_location_from_navigation() # gets a valid random location on the map (not on the streets)
         if (random_map_loc != None):
@@ -54,7 +54,15 @@ def main():
         walker_bp = random.choice(peds)
         batch_ped.append(SpawnActor(walker_bp, spawn_point))
     
-    results = client.apply_batch_sync(batch_ped, True)
+    ped_list = []
+    for i in client.apply_batch_sync(batch_ped, True):
+        if not i.error:
+            print("SPAWNED A PEDESTRIAN")
+            ped_list.append(i.actor_id)
+
+
+
+
 
     # SPAWN CARS
     car_spawn_points = mapManager.spawn_points
@@ -92,17 +100,35 @@ def main():
 
     spectator = world.get_spectator()
     vehicle = world.get_actor(vehicles_list[0])
-    print(spectator)
-    print(vehicle)
-    for i in range(1000):
+    pedestrian = world.get_actor(ped_list[0])
+
+    world.set_pedestrians_cross_factor(1)
+    walker_controller_bp = world.get_blueprint_library().find('controller.ai.walker')
+    walkerControllerActor = world.spawn_actor(walker_controller_bp, carla.Transform(), pedestrian)
+    walkerControllerActor.start()
+    walkerControllerActor.go_to_location(world.get_random_location_from_navigation())
+    walkerControllerActor.set_max_speed(2)
+    # control = carla.WalkerControl()
+    # control.speed = 1.9
+    # control.direction.y = 1
+    # control.direction.x = 0
+    # control.direction.z = 0
+    for i in range(3000):
         world.tick()
-        spectator.set_transform(get_transform(vehicle.get_location(), 90))
-        time.sleep(0.05)
+        #pedestrian.apply_control(control)
+        #spectator.set_transform(get_transform(vehicle.get_location(), vehicle.get_transform().rotation))
+        #spectator.set_transform(vehicle.get_transform())
+        spectator.set_transform(get_transform(pedestrian.get_location(), 90))
+        #spectator.set_transform(pedestrian.get_transform())
+        time.sleep(0.02)
+
+    walkerControllerActor.stop()
+
+    carla.command.DestroyActor(walkerControllerActor)
+
+    client.apply_batch([carla.command.DestroyActor(x) for x in vehicles_list])
+    client.apply_batch([carla.command.DestroyActor(x) for x in ped_list])
     
-
-
-    # spectator = world.get_actors()
-    # print(spectator)
 
 
 
